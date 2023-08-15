@@ -1,0 +1,119 @@
+.landing-page {
+  position: relative;
+  background-color: #F7EAD6;
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+  height: auto;
+}
+
+.under-page {
+  position: relative;
+  min-height: 25vh;
+  height: auto;
+  display: flex;
+  background-color: #F7EAD6;
+
+}
+
+.background-image {
+  margin-top: 10vh;
+  height: auto;
+  max-width: 100%;
+}
+
+.landing-title {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.title-text {
+  font-size: 2rem; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto; /* Center the paragraph horizontally */
+}
+
+.make-appointment-button {
+  font-size: 2rem;
+  padding: 20px 40px; /* Adjust padding to increase button size */
+  margin-top : 2.4rem;
+  height: auto; /* Allow the button to expand in height */
+  width: auto; /* Allow the button to expand in width */
+  background-color: #7D4F50;
+  border: none;
+  border-radius: 10px;
+}
+.learn-button {
+  font-size: 1rem;
+  padding: 10px 20px; /* Adjust padding to increase button size */
+  margin-top : 1rem;
+  height: auto; /* Allow the button to expand in height */
+  width: auto; /* Allow the button to expand in width */
+  background-color: #7D4F50;
+  border: none;
+  border-radius: 10px;
+}
+
+.icons {
+  align-items: center;
+  height: 72px;
+  width: 72px;
+}
+
+.about-img {
+  height: auto;
+  max-width: 100%;
+  max-height: 80vh;
+}
+.counsel-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.counsel-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center bottom, transparent 50%, #000 100%);
+}
+p {
+  font-size: 1rem;
+}
+
+.process {
+  background-color: #F6F6F6; /* Set the background color of the section */
+  padding: 40px 0; /* Add some padding around the content */
+  display: flex;
+
+}
+
+.horizontal-line {
+  width: 60px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the height of the line */
+  background-color: black; /* Set the color of the line */
+  margin-bottom: 10px;
+}
+
+
+.process h1 {
+  font-size: 2.4rem;
+}
+
+.subtle-bold-text {
+  font-weight: 600; /* Adjust the font weight to your preference */
+  color: #888; /* Choose a color that gives a subtle appearance */
+  opacity: 0.8; /* Adjust the opacity for a faded effect */
+}
+/* Add more styling as needed */
+
