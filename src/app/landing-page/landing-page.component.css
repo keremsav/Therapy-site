@@ -1,6 +1,6 @@
 .landing-page {
   position: relative;
-  background-color: #F7EAD6;
+  background-color: #F7F9FB;
   display: flex;
   justify-content: center;
   min-height: 75vh;
@@ -12,7 +12,7 @@
   min-height: 25vh;
   height: auto;
   display: flex;
-  background-color: #F7EAD6;
+  background-color: #F7F9FB;
 
 }
 
@@ -20,7 +20,13 @@
   margin-top: 10vh;
   height: auto;
   max-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
 }
+.background-image:hover {
+  transform: scale(1.04);
+}
+
 
 .landing-title {
   text-align: center;
@@ -42,14 +48,19 @@
 }
 
 .make-appointment-button {
-  font-size: 2rem;
-  padding: 20px 40px; /* Adjust padding to increase button size */
+  font-size: 1.5rem;
+  padding: 15px 30px; /* Adjust padding to increase button size */
   margin-top : 2.4rem;
   height: auto; /* Allow the button to expand in height */
   width: auto; /* Allow the button to expand in width */
-  background-color: #7D4F50;
+  background-color: #333333;
   border: none;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.make-appointment-button:hover {
+  transform: scale(1.05);
 }
 .learn-button {
   font-size: 1rem;
@@ -57,9 +68,13 @@
   margin-top : 1rem;
   height: auto; /* Allow the button to expand in height */
   width: auto; /* Allow the button to expand in width */
-  background-color: #7D4F50;
+  background-color: #333333;
   border: none;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.learn-button:hover{
+  transform: scale(1.05);
 }
 
 .icons {
@@ -72,27 +87,20 @@
   height: auto;
   max-width: 100%;
   max-height: 80vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
 }
 .counsel-img {
   height: auto;
   max-width: 100%;
-}
-
-.counsel-img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center bottom, transparent 50%, #000 100%);
+  clip-path: ellipse(70% 80% at 50% 90%);
 }
 p {
   font-size: 1rem;
 }
 
 .process {
-  background-color: #F6F6F6; /* Set the background color of the section */
+   /* Set the background color of the section */
   padding: 40px 0; /* Add some padding around the content */
   display: flex;
 
@@ -105,6 +113,14 @@ p {
   margin-bottom: 10px;
 }
 
+.line-problem {
+  width: 110px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the height of the line */
+  background-color: black; /* Set the color of the line */
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
 
 .process h1 {
   font-size: 2.4rem;
@@ -115,5 +131,111 @@ p {
   color: #888; /* Choose a color that gives a subtle appearance */
   opacity: 0.8; /* Adjust the opacity for a faded effect */
 }
-/* Add more styling as needed */
+
+.process-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  top : -50px;
+  width: 90%;
+  border : none;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform : scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.any-problem .card{
+  top : -50px;
+  left: -30px;
+  width: 60%;
+  border : none;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.card-number {
+  font-size: 1.5rem;
+  line-height: 100px;
+  font-weight: bold;
+  margin-right: 10px;
+  border-right: 2px solid #333;
+  padding-right: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.card-info {
+  text-align: center;
+}
+.card-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+.card-info p {
+  font-size : 1.2rem;
+}
+
+.problems-img {
+  max-width: 100%;
+  border: 2px solid transparent;
+  border-left : 2px solid black;
+  height: auto;
+  margin-top: 30px;
+  clip-path: ellipse(90% 90% at 0% 50%);
+  background: linear-gradient(to right,black,white);
+}
+.any-problem {
+  display: flex;
+  margin-top: 20px;
+}
+.any-problem h2 {
+  font-size: 2rem;
+}
+
+.problems-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-color: #333333;
+  color: white;
+  padding: 15px 0;
+  margin: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.problems-box:hover {
+  transform: scale(1.05);
+}
+
+.about {
+  background-color: #F7F9FB;
+}
+
+
+
 

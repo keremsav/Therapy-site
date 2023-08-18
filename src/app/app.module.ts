@@ -10,6 +10,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import {MatCardModule} from "@angular/material/card";
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
+    MatCardModule,
 
   ],
   providers: [],
