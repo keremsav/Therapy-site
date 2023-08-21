@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-landing-page',
@@ -7,12 +8,6 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
-  testimonials: any[] = [
-    { comment: 'Great experience!', author: 'User 1' },
-    { comment: 'Highly recommended!', author: 'User 2' },
-    { comment: 'Amazing service!', author: 'User 3' }
-    // Add more testimonials here
-  ];
 
 
 

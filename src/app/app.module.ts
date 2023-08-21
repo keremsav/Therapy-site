@@ -11,6 +11,11 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import {MatCardModule} from "@angular/material/card";
+import { AppointmentComponent } from './appointment/appointment.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatNativeDateModule} from "@angular/material/core";
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 @NgModule({
@@ -18,7 +23,8 @@ import {MatCardModule} from "@angular/material/card";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,10 @@ import {MatCardModule} from "@angular/material/card";
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-
+    ReactiveFormsModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
