@@ -2,6 +2,9 @@
 @import "node_modules/bootstrap/dist/css/bootstrap.css";
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Times New Roman", "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Times New Roman", sans-serif; }
+* {
+    font-family: "Times New Roman", sans-serif;
+}
 
 

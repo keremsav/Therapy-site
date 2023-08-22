@@ -1,0 +1,82 @@
+<div class="container mt-5 pt-5 mb-5">
+  <div class="row text-center mb-5">
+    <h1>Contact Us</h1>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-4 col-sm-12 mt-2">
+      <mat-icon>location_on</mat-icon>
+      <h2 class="mt-2 mb-2">ADDRESS</h2>
+      <p>Cihannüma Mah. Beşiktaş/Istanbul</p>
+    </div>
+    <div class="col-md-4 col-sm-12 middle-contact mt-2">
+      <mat-icon>contacts</mat-icon>
+      <h2 class="mt-2 mb-2">PHONE NUMBER</h2>
+      <p><a class="text-decoration-none text-black" href="tel:+90 538 596 0900">+90 538 596 0900</a></p>
+    </div>
+    <div class="col-md-4 col-sm-12 mt-2">
+      <mat-icon>mail</mat-icon>
+      <h2 class="mt-2 mb-2">EMAIL</h2>
+      <p><a class="text-decoration-none text-black" href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+  </div>
+  <div class="row"><form action="https://formsubmit.co/0d291532a415cdb19d554f898cf56648" method="post" [formGroup]="contactForm" class="form-container mt-5">
+    <input type="hidden" name="_template" value="box">
+
+
+
+    <!-- ... -->
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field class="w-100">
+          <mat-label>Your Name</mat-label>
+          <input matInput formControlName="name">
+          <mat-error *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+            {{ getErrorMessage('name') }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field class="w-100">
+          <mat-label>Your Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+            {{ getErrorMessage('email') }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <mat-form-field class="w-100">
+        <mat-label>Subject</mat-label>
+        <input matInput formControlName="subject">
+        <mat-error *ngIf="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
+          {{ getErrorMessage('subject') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field style="height: 200px" class="w-100">
+        <mat-label>Message</mat-label>
+        <textarea matInput cdkTextareaAutosize
+                  #autosize="cdkTextareaAutosize"
+                  cdkAutosizeMinRows="1"
+                  cdkAutosizeMaxRows="5" formControlName="message"></textarea>
+        <mat-error *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.errors?.['maxLengthExceeded']  && contactForm.get('message')?.touched">
+          {{ getErrorMessage('message') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Contact Form Submission">
+    <input type="text" name="name" value="{{ contactForm.value.name }}" style="display: none;">
+    <input type="email" name="email" value="{{ contactForm.value.email }}" style="display: none;">
+    <input type="text" name="subject" value="{{ contactForm.value.subject }}" style="display: none;">
+    <input type="text" name="message" value="{{ contactForm.value.message }}" style="display: none;">
+
+    <!-- ... -->
+    <div class="row">
+      <button [disabled]="isButtonDisabled" (click)="sendContactMessage()" mat-raised-button >Send It</button>
+    </div>
+  </form>
+  </div>
+</div>

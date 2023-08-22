@@ -16,6 +16,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ContactComponent } from './contact/contact.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ReactiveFormsModule,
     MatInputModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
