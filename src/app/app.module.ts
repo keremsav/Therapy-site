@@ -18,6 +18,8 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ContactComponent } from './contact/contact.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { AboutDialogComponent } from './about-dialog/about-dialog.component';
+import  {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     FooterComponent,
     LandingPageComponent,
     AppointmentComponent,
-    ContactComponent
+    ContactComponent,
+    AboutDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatInputModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    MatSnackBarModule
+    MatDialogModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
