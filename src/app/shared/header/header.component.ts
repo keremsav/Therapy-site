@@ -9,6 +9,8 @@ import {MatIcon} from "@angular/material/icon";
 export class HeaderComponent {
   isMenuOpen : boolean = false;
   isHeaderBlurred = false;
+  isDropdownOpen = false;
+
 
   constructor(private renderer: Renderer2) {}
 
@@ -17,12 +19,25 @@ export class HeaderComponent {
     const scrollY = window.scrollY;
     const header = document.querySelector('.header');
 
-    if (scrollY > 0) {
-      this.renderer.addClass(header, 'blurred');
-      this.isHeaderBlurred = true;
-    } else {
-      this.renderer.removeClass(header, 'blurred');
-      this.isHeaderBlurred = false;
+    if (!this.isMenuOpen) {
+        if (scrollY > 0) {
+            this.renderer.addClass(header, 'blurred');
+            this.isHeaderBlurred = true;
+        } else {
+            this.renderer.removeClass(header, 'blurred');
+            this.isHeaderBlurred = false;
+        }
     }
+  }
+
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+
+  toggleMenu() {
+
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }
