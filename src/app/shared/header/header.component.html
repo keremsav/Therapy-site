@@ -1,7 +1,24 @@
-<div style="width: 100%;padding-top: 96px">
-    <nav id="navbar-header"
-         class="navbar navbar-expand-lg navbar-light fixed-top mat-elevation-z8 "
-            >
-
-    </nav>
-</div>
+<mat-toolbar class="header fixed-top" color="primary">
+  <div class="header-links mx-auto" [class.open]="isMenuOpen" [class.blurred]="isHeaderBlurred">
+    <ul>
+      <li>
+        <a href="#" aria-current="page">Home </a>
+      </li>
+      <li>
+        <a href="#About">About Me</a>
+      </li>
+      <li>
+        <a href="#Appointment">Appointment</a>
+      </li>
+      <li>
+        <a href="#Contact">Contact</a>
+      </li>
+      <a class="icons-a" href="https://instagram.com"><img class="social-icons" src="assets/instagram.svg"></a>
+      <a class="icons-a" href="https://twitter.com/home"><img class="social-icons" src="assets/twitter.svg"></a>
+      <a class="icons-a" href="https://facebook.com"><img class="social-icons" src="assets/facebook-1.svg"></a>
+    </ul>
+  </div>
+  <button mat-icon-button class="header-toggle" [ngStyle]="{'color':'black'}" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>

@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { AboutDialogComponent } from './about-dialog/about-dialog.component';
 import  {MatDialogModule} from "@angular/material/dialog";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import  {MatDialogModule} from "@angular/material/dialog";
     MatDatepickerModule,
     MatDialogModule,
     MatSnackBarModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
