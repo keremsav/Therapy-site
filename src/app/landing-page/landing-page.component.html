@@ -1,6 +1,6 @@
 <app-header></app-header>
-<div class="landing-page">
-  <div class="container">
+<div class="landing-page vw-100">
+  <div class="container-fluid">
     <div class="row  align-items-center">
       <div class="col-md-6 align-items-center">
         <img class="background-image" src="./assets/pexels-alex-green-5699454.jpg">
@@ -21,7 +21,7 @@
   </div>
 </div>
 <div class="under-page">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mt-2">
       <div class="col-md-4">
         <img class="icons" src="assets/confidentiality.png">
@@ -42,7 +42,7 @@
   </div>
 </div>
 <div class="any-problem">
-  <div class="container d-flex">
+  <div class="container-fluid d-flex">
     <div class="row">
       <div class="col-md-6">
         <h2>Any more problems?</h2>
@@ -84,7 +84,7 @@
 
 
 <section id="About" style="background-color: #F7F9FB; height: auto;" class="mt-5 mb-5 p-5">
-  <div class="container ">
+  <div class="container-fluid ">
     <div class="row mt-4 justify-content-center">
       <div class="col-md-6  text-center">
         <img class="about-img" src="assets/pexels-cottonbro-studio-4100653.jpg">
@@ -102,15 +102,14 @@
         <p>
           With a focus on holistic healing, I provide a warm and non-judgmental environment where you can freely express yourself. Together, we will work collaboratively to uncover insights, develop coping strategies, and embark on a journey towards positive change.
         </p>
-        <button mat-button class="learn-button" (click)="openDialog()"><span class="text-white">Learn More</span></button>
       </div>
     </div>
   </div>
 </section>
 
 <div class="process">
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row justify-content-around">
       <div class="col-md-4 col-sm-6">
         <h1>Counselling</h1>
         <div class="d-flex align-items-center">
@@ -173,13 +172,13 @@
   </div>
 </div>
 <section style=" background-color: #F7F9FB; height:auto;" id="Appointment">
-  <div class="container">
+  <div class="container-fluid">
     <app-appointment></app-appointment>
   </div>
 </section>
 
 <section id="Contact">
-  <div class="container">
+  <div class="container-fluid">
     <app-contact></app-contact>
   </div>
 </section>

@@ -1,24 +1,35 @@
 <mat-toolbar class="header fixed-top" color="primary">
-  <div class="header-links mx-auto" [class.open]="isMenuOpen" [class.blurred]="isHeaderBlurred">
-    <ul>
-      <li>
-        <a href="#" aria-current="page">Home </a>
-      </li>
-      <li>
-        <a href="#About">About Me</a>
-      </li>
-      <li>
-        <a href="#Appointment">Appointment</a>
-      </li>
-      <li>
-        <a href="#Contact">Contact</a>
-      </li>
-      <a class="icons-a" href="https://instagram.com"><img class="social-icons" src="assets/instagram.svg"></a>
-      <a class="icons-a" href="https://twitter.com/home"><img class="social-icons" src="assets/twitter.svg"></a>
-      <a class="icons-a" href="https://facebook.com"><img class="social-icons" src="assets/facebook-1.svg"></a>
-    </ul>
+  <div class="container-fluid">
+    <div class="header-links" [class.open]="isMenuOpen">
+      <div style="
+           display: block;
+           width: 50px;
+           background-color: transparent"
+           class="logo">
+
+      </div>
+      <ul class="centered-list">
+        <li>
+          <a href="#" aria-current="page">Home </a>
+        </li>
+        <li>
+          <a href="#About">About Me</a>
+        </li>
+        <li>
+          <a href="#Appointment">Appointment</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+      </ul>
+      <div class="icons">
+        <a class="icons-a" href="https://instagram.com"><img class="social-icons" src="assets/instagram.svg"></a>
+        <a class="icons-a" href="https://twitter.com/home"><img class="social-icons" src="assets/twitter.svg"></a>
+        <a class="icons-a" href="https://facebook.com"><img class="social-icons" src="assets/facebook-1.svg"></a>
+      </div>
+    </div>
+    <button mat-icon-button class="header-toggle" [ngStyle]="{'color':'black'}" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
-  <button mat-icon-button class="header-toggle" [ngStyle]="{'color':'black'}" (click)="toggleMenu()">
-    <mat-icon>menu</mat-icon>
-  </button>
 </mat-toolbar>
