@@ -22,7 +22,6 @@ import { AboutDialogComponent } from './about-dialog/about-dialog.component';
 import  {MatDialogModule} from "@angular/material/dialog";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +30,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     LandingPageComponent,
     AppointmentComponent,
     ContactComponent,
-    AboutDialogComponent
+    AboutDialogComponent,
   ],
   imports: [
     BrowserModule,
